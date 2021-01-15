@@ -39,5 +39,11 @@ namespace WebApplicationTIIAula.Controllers
             categoria.CategoriaId = categorias.Select(m => m.CategoriaId).Max() + 1;
             return RedirectToAction("Index");
         }
+
+        // GET: Categorias
+        public ActionResult Edit()
+        {
+            return View();
+        }
     }
 }
